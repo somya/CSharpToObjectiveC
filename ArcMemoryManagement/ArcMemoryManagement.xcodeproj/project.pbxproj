@@ -1,0 +1,281 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EF1B858715FD1EDF00B8C77C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF1B858615FD1EDF00B8C77C /* UIKit.framework */; };
+		EF1B858915FD1EDF00B8C77C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF1B858815FD1EDF00B8C77C /* Foundation.framework */; };
+		EF1B858B15FD1EDF00B8C77C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF1B858A15FD1EDF00B8C77C /* CoreGraphics.framework */; };
+		EF1B859115FD1EDF00B8C77C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EF1B858F15FD1EDF00B8C77C /* InfoPlist.strings */; };
+		EF1B859315FD1EDF00B8C77C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EF1B859215FD1EDF00B8C77C /* main.m */; };
+		EF1B859715FD1EDF00B8C77C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EF1B859615FD1EDF00B8C77C /* AppDelegate.m */; };
+		EF1B859A15FD1EDF00B8C77C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF1B859915FD1EDF00B8C77C /* ViewController.m */; };
+		EF1B859D15FD1EDF00B8C77C /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF1B859B15FD1EDF00B8C77C /* ViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		EF1B858215FD1EDF00B8C77C /* ArcMemoryManagement.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArcMemoryManagement.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF1B858615FD1EDF00B8C77C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		EF1B858815FD1EDF00B8C77C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		EF1B858A15FD1EDF00B8C77C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		EF1B858E15FD1EDF00B8C77C /* ArcMemoryManagement-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ArcMemoryManagement-Info.plist"; sourceTree = "<group>"; };
+		EF1B859015FD1EDF00B8C77C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EF1B859215FD1EDF00B8C77C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EF1B859415FD1EDF00B8C77C /* ArcMemoryManagement-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ArcMemoryManagement-Prefix.pch"; sourceTree = "<group>"; };
+		EF1B859515FD1EDF00B8C77C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EF1B859615FD1EDF00B8C77C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EF1B859815FD1EDF00B8C77C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		EF1B859915FD1EDF00B8C77C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		EF1B859C15FD1EDF00B8C77C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EF1B857F15FD1EDF00B8C77C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF1B858715FD1EDF00B8C77C /* UIKit.framework in Frameworks */,
+				EF1B858915FD1EDF00B8C77C /* Foundation.framework in Frameworks */,
+				EF1B858B15FD1EDF00B8C77C /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EF1B857715FD1EDF00B8C77C = {
+			isa = PBXGroup;
+			children = (
+				EF1B858C15FD1EDF00B8C77C /* ArcMemoryManagement */,
+				EF1B858515FD1EDF00B8C77C /* Frameworks */,
+				EF1B858315FD1EDF00B8C77C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EF1B858315FD1EDF00B8C77C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EF1B858215FD1EDF00B8C77C /* ArcMemoryManagement.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EF1B858515FD1EDF00B8C77C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EF1B858615FD1EDF00B8C77C /* UIKit.framework */,
+				EF1B858815FD1EDF00B8C77C /* Foundation.framework */,
+				EF1B858A15FD1EDF00B8C77C /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EF1B858C15FD1EDF00B8C77C /* ArcMemoryManagement */ = {
+			isa = PBXGroup;
+			children = (
+				EF1B859515FD1EDF00B8C77C /* AppDelegate.h */,
+				EF1B859615FD1EDF00B8C77C /* AppDelegate.m */,
+				EF1B859815FD1EDF00B8C77C /* ViewController.h */,
+				EF1B859915FD1EDF00B8C77C /* ViewController.m */,
+				EF1B859B15FD1EDF00B8C77C /* ViewController.xib */,
+				EF1B858D15FD1EDF00B8C77C /* Supporting Files */,
+			);
+			path = ArcMemoryManagement;
+			sourceTree = "<group>";
+		};
+		EF1B858D15FD1EDF00B8C77C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EF1B858E15FD1EDF00B8C77C /* ArcMemoryManagement-Info.plist */,
+				EF1B858F15FD1EDF00B8C77C /* InfoPlist.strings */,
+				EF1B859215FD1EDF00B8C77C /* main.m */,
+				EF1B859415FD1EDF00B8C77C /* ArcMemoryManagement-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EF1B858115FD1EDF00B8C77C /* ArcMemoryManagement */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF1B85A015FD1EDF00B8C77C /* Build configuration list for PBXNativeTarget "ArcMemoryManagement" */;
+			buildPhases = (
+				EF1B857E15FD1EDF00B8C77C /* Sources */,
+				EF1B857F15FD1EDF00B8C77C /* Frameworks */,
+				EF1B858015FD1EDF00B8C77C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ArcMemoryManagement;
+			productName = ArcMemoryManagement;
+			productReference = EF1B858215FD1EDF00B8C77C /* ArcMemoryManagement.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EF1B857915FD1EDF00B8C77C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = EF1B857C15FD1EDF00B8C77C /* Build configuration list for PBXProject "ArcMemoryManagement" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = EF1B857715FD1EDF00B8C77C;
+			productRefGroup = EF1B858315FD1EDF00B8C77C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EF1B858115FD1EDF00B8C77C /* ArcMemoryManagement */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EF1B858015FD1EDF00B8C77C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF1B859115FD1EDF00B8C77C /* InfoPlist.strings in Resources */,
+				EF1B859D15FD1EDF00B8C77C /* ViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EF1B857E15FD1EDF00B8C77C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF1B859315FD1EDF00B8C77C /* main.m in Sources */,
+				EF1B859715FD1EDF00B8C77C /* AppDelegate.m in Sources */,
+				EF1B859A15FD1EDF00B8C77C /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		EF1B858F15FD1EDF00B8C77C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF1B859015FD1EDF00B8C77C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		EF1B859B15FD1EDF00B8C77C /* ViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF1B859C15FD1EDF00B8C77C /* en */,
+			);
+			name = ViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EF1B859E15FD1EDF00B8C77C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		EF1B859F15FD1EDF00B8C77C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EF1B85A115FD1EDF00B8C77C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ArcMemoryManagement/ArcMemoryManagement-Prefix.pch";
+				INFOPLIST_FILE = "ArcMemoryManagement/ArcMemoryManagement-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		EF1B85A215FD1EDF00B8C77C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ArcMemoryManagement/ArcMemoryManagement-Prefix.pch";
+				INFOPLIST_FILE = "ArcMemoryManagement/ArcMemoryManagement-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EF1B857C15FD1EDF00B8C77C /* Build configuration list for PBXProject "ArcMemoryManagement" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF1B859E15FD1EDF00B8C77C /* Debug */,
+				EF1B859F15FD1EDF00B8C77C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF1B85A015FD1EDF00B8C77C /* Build configuration list for PBXNativeTarget "ArcMemoryManagement" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF1B85A115FD1EDF00B8C77C /* Debug */,
+				EF1B85A215FD1EDF00B8C77C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EF1B857915FD1EDF00B8C77C /* Project object */;
+}
