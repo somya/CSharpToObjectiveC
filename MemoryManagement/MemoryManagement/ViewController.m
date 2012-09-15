@@ -14,10 +14,12 @@
 - (void)loadView
 {
 	MainView *mainView = [[MainView alloc] init];
+
 	self.view = mainView;
 
 	[mainView.runTestButton addTarget:self action:@selector(runAllocTest)
 		forControlEvents:UIControlEventTouchUpInside];
+
 	[mainView release];
 }
 
@@ -32,8 +34,9 @@
 	while ( 1 )
 	{
 
-		NSData *data = [[NSData alloc]
-			initWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"test" ofType:@"img"]];
+		NSString *filePath = [[NSBundle mainBundle] pathForResource:@"test" ofType:@"img"];
+
+		NSData *data = [[NSData alloc] initWithContentsOfFile:filePath];
 
 		if ( allocTestRun >= INT_MAX )
 		{

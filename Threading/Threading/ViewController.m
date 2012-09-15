@@ -31,23 +31,18 @@
 
 - (void)runThreadingTest
 {
-	NSObject *lock = [[[NSObject alloc] init] autorelease];
-	__block int sum = 0;
+
 	for ( int j = 0; j < 10; j++ )
 	{
 
-		dispatch_async( dispatch_get_global_queue( DISPATCH_QUEUE_PRIORITY_LOW, 0 ), ^
+		dispatch_async( dispatch_get_global_queue( DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0 ), ^
 		{
-			@synchronized ( lock )
-			{
-				sum += 1;
-			}
-			NSLog( @"j = [%i] %i", j, sum);
+			NSLog( @"j = [%i]", j);
 
-			dispatch_async( dispatch_get_main_queue(), ^
-			{
-				NSLog( @"[Main]j = [%i] %i", j, sum );
-			} );
+//			dispatch_async( dispatch_get_main_queue(), ^
+//			{
+//
+//			} );
 		} );
 
 	}
