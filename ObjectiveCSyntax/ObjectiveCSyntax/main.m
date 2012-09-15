@@ -8,11 +8,17 @@
 
 #import <UIKit/UIKit.h>
 
-#import "AppDelegate.h"
+#import "SimpleClass.h"
 
 int main(int argc, char *argv[])
 {
     @autoreleasepool {
-        return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
+
+	    SimpleClass *simpleClass = [[SimpleClass alloc] init];
+
+	    [simpleClass sayHelloWorld];
+
+	    [simpleClass release];
+	    return 0;
     }
 }

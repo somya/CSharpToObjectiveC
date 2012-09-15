@@ -13,7 +13,6 @@
 		EF1B859115FD1EDF00B8C77C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EF1B858F15FD1EDF00B8C77C /* InfoPlist.strings */; };
 		EF1B859315FD1EDF00B8C77C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EF1B859215FD1EDF00B8C77C /* main.m */; };
 		EF1B859715FD1EDF00B8C77C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EF1B859615FD1EDF00B8C77C /* AppDelegate.m */; };
-		EF1B859A15FD1EDF00B8C77C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF1B859915FD1EDF00B8C77C /* ViewController.m */; };
 		EF1B859D15FD1EDF00B8C77C /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF1B859B15FD1EDF00B8C77C /* ViewController.xib */; };
 /* End PBXBuildFile section */
 
@@ -28,8 +27,6 @@
 		EF1B859415FD1EDF00B8C77C /* ArcMemoryManagement-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ArcMemoryManagement-Prefix.pch"; sourceTree = "<group>"; };
 		EF1B859515FD1EDF00B8C77C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		EF1B859615FD1EDF00B8C77C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		EF1B859815FD1EDF00B8C77C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		EF1B859915FD1EDF00B8C77C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		EF1B859C15FD1EDF00B8C77C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -79,8 +76,6 @@
 			children = (
 				EF1B859515FD1EDF00B8C77C /* AppDelegate.h */,
 				EF1B859615FD1EDF00B8C77C /* AppDelegate.m */,
-				EF1B859815FD1EDF00B8C77C /* ViewController.h */,
-				EF1B859915FD1EDF00B8C77C /* ViewController.m */,
 				EF1B859B15FD1EDF00B8C77C /* ViewController.xib */,
 				EF1B858D15FD1EDF00B8C77C /* Supporting Files */,
 			);
@@ -162,7 +157,6 @@
 			files = (
 				EF1B859315FD1EDF00B8C77C /* main.m in Sources */,
 				EF1B859715FD1EDF00B8C77C /* AppDelegate.m in Sources */,
-				EF1B859A15FD1EDF00B8C77C /* ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
