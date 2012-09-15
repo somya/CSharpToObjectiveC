@@ -20,7 +20,7 @@
 	[mainView.runTestButton addTarget:self action:@selector(runAllocTest)
 		forControlEvents:UIControlEventTouchUpInside];
 
-	[mainView release];
+
 }
 
 - (MainView *)mainView
@@ -31,20 +31,18 @@
 - (void)runAllocTest
 {
 
-//	while ( 1 )
-//	{
+	while ( 1 )
+	{
 
 		NSString *filePath = [[NSBundle mainBundle] pathForResource:@"test" ofType:@"img"];
 
-		NSData *data = [[[NSData alloc] initWithContentsOfFile:filePath] autorelease ];
+		NSData *data = [[NSData alloc] initWithContentsOfFile:filePath];
 
-		[data release];
-//
-//		if ( allocTestRun >= 100 )
-//		{
-//			break;
-//		}
-//	}
+		if ( allocTestRun >= 100 )
+		{
+			break;
+		}
+	}
 }
 
 - (void)viewDidLoad

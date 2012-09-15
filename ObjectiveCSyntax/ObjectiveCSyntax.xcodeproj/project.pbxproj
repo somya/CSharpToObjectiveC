@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		688AC5EA4C35E7D37715A5D2 /* SimpleClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 688AC8878CF420DCBBBEE0CF /* SimpleClass.m */; };
 		EFDD11B715F1028A0047FA6B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFDD11B615F1028A0047FA6B /* UIKit.framework */; };
 		EFDD11B915F1028A0047FA6B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFDD11B815F1028A0047FA6B /* Foundation.framework */; };
 		EFDD11BB15F1028A0047FA6B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFDD11BA15F1028A0047FA6B /* CoreGraphics.framework */; };
@@ -15,6 +16,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		688AC2F4A573A4CEEB8E84B4 /* NewProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewProtocol.h; sourceTree = "<group>"; };
+		688AC8878CF420DCBBBEE0CF /* SimpleClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleClass.m; sourceTree = "<group>"; };
+		688ACB6176EA4EBA43B88DBF /* SimpleClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleClass.h; sourceTree = "<group>"; };
 		EFDD11B215F1028A0047FA6B /* ObjectiveCSyntax.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ObjectiveCSyntax.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFDD11B615F1028A0047FA6B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		EFDD11B815F1028A0047FA6B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -69,6 +73,9 @@
 		EFDD11BC15F1028A0047FA6B /* ObjectiveCSyntax */ = {
 			isa = PBXGroup;
 			children = (
+				688AC2F4A573A4CEEB8E84B4 /* NewProtocol.h */,
+				688ACB6176EA4EBA43B88DBF /* SimpleClass.h */,
+				688AC8878CF420DCBBBEE0CF /* SimpleClass.m */,
 				EFDD11BD15F1028A0047FA6B /* Supporting Files */,
 			);
 			path = ObjectiveCSyntax;
@@ -147,6 +154,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EFDD11C315F1028A0047FA6B /* main.m in Sources */,
+				688AC5EA4C35E7D37715A5D2 /* SimpleClass.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
