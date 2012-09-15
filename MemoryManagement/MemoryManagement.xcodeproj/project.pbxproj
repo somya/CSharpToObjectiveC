@@ -7,10 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		688AC2E7094C0A46038CC5FD /* 100x100.gif in Resources */ = {isa = PBXBuildFile; fileRef = 688AC3A97AC8B52F09A6D1E4 /* 100x100.gif */; };
 		688AC3EDF2086BEB0C6E00AD /* MainView.m in Sources */ = {isa = PBXBuildFile; fileRef = 688ACC225B8C76D0A3E5E436 /* MainView.m */; };
 		688ACB9F1FF3345861CA5109 /* test.img in Resources */ = {isa = PBXBuildFile; fileRef = 688AC2F6D8FC0265593DFEBB /* test.img */; };
-		688ACF89CF3035E88B616ECA /* profile2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 688AC82ED0061536DC806ED6 /* profile2.jpg */; };
 		EFDD11DD15F1030E0047FA6B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFDD11DC15F1030E0047FA6B /* UIKit.framework */; };
 		EFDD11DF15F1030E0047FA6B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFDD11DE15F1030E0047FA6B /* Foundation.framework */; };
 		EFDD11E115F1030E0047FA6B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFDD11E015F1030E0047FA6B /* CoreGraphics.framework */; };
@@ -22,8 +20,6 @@
 
 /* Begin PBXFileReference section */
 		688AC2F6D8FC0265593DFEBB /* test.img */ = {isa = PBXFileReference; lastKnownFileType = file.img; path = test.img; sourceTree = "<group>"; };
-		688AC3A97AC8B52F09A6D1E4 /* 100x100.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 100x100.gif; sourceTree = "<group>"; };
-		688AC82ED0061536DC806ED6 /* profile2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = profile2.jpg; sourceTree = "<group>"; };
 		688AC94A9CB0364695EF13CF /* MainView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainView.h; sourceTree = "<group>"; };
 		688ACC225B8C76D0A3E5E436 /* MainView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainView.m; sourceTree = "<group>"; };
 		EFDD11D815F1030E0047FA6B /* MemoryManagement.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MemoryManagement.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -85,8 +81,6 @@
 			isa = PBXGroup;
 			children = (
 				688AC2F6D8FC0265593DFEBB /* test.img */,
-				688AC82ED0061536DC806ED6 /* profile2.jpg */,
-				688AC3A97AC8B52F09A6D1E4 /* 100x100.gif */,
 				688AC94A9CB0364695EF13CF /* MainView.h */,
 				688ACC225B8C76D0A3E5E436 /* MainView.m */,
 				EFDD11EB15F1030E0047FA6B /* AppDelegate.h */,
@@ -160,8 +154,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				EFDD11E715F1030E0047FA6B /* InfoPlist.strings in Resources */,
-				688AC2E7094C0A46038CC5FD /* 100x100.gif in Resources */,
-				688ACF89CF3035E88B616ECA /* profile2.jpg in Resources */,
 				688ACB9F1FF3345861CA5109 /* test.img in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
