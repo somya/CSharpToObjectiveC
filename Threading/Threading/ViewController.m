@@ -31,11 +31,25 @@
 
 	while ( 1 )
 	{
+		self.mainView.messageLabel.text =
+			[NSString stringWithFormat:@"Alloc Test Complete: %d", ++allocTestRun];
 
-		NSData *data = [[NSData alloc]
-			initWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"test" ofType:@"img"]];
+//		@autoreleasepool
+//		{
 
-		if ( allocTestRun >= INT_MAX )
+			NSData *data = [[[NSData alloc]
+				initWithContentsOfFile:[[NSBundle mainBundle]
+					pathForResource:@"test" ofType:@"img"]]
+				autorelease];
+
+//		data.retain;
+
+//		[data release];
+
+			NSLog( @"[%i] ", allocTestRun );
+//		}
+
+		if ( allocTestRun == INT_MAX )
 		{
 			break;
 		}
