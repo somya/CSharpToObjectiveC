@@ -8,17 +8,17 @@
 
 #import <UIKit/UIKit.h>
 
-#import "SimpleClass.h"
+//#import "SimpleClass.h"
 
 int main(int argc, char *argv[])
 {
     @autoreleasepool {
 
-	    SimpleClass *simpleClass = [[SimpleClass alloc] init];
+//	    SimpleClass *simpleClass = [[SimpleClass alloc] init];
 
-	    [simpleClass sayHelloWorld];
+//	    [simpleClass sayHelloWorld];
 
-	    [simpleClass release];
+//	    [simpleClass release];
 	    return 0;
     }
 }

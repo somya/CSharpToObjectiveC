@@ -16,7 +16,7 @@
 	MainView *mainView = [[MainView alloc] init];
 	self.view = mainView;
 
-	[mainView.allocButton addTarget:self action:@selector(runAllocTest)
+	[mainView.runTestButton addTarget:self action:@selector(runAllocTest)
 		forControlEvents:UIControlEventTouchUpInside];
 	[mainView release];
 }

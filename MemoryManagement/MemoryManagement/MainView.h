@@ -9,10 +9,11 @@
 @interface MainView : UIView
 {
 	@private
-	UIButton * m_allocButton;
+	UIButton *m_runTestButton;
 	UILabel * m_messageLabel;
 }
-@property( nonatomic, retain ) UIButton *allocButton;
+@property( nonatomic, retain ) UIButton *runTestButton;
+
 @property( nonatomic, retain ) UILabel *messageLabel;
 
 

@@ -16,7 +16,10 @@
 	MainView *mainView = [[MainView alloc] init];
 	self.view = mainView;
 
-	[mainView.allocButton addTarget:self action:@selector(runAllocTest)
+	[mainView.runTestButton addTarget:self action:@selector(runThreadingTest)
+		forControlEvents:UIControlEventTouchUpInside];
+
+	[mainView.runTest2Button addTarget:self action:@selector(runDispatchGroupTest)
 		forControlEvents:UIControlEventTouchUpInside];
 	[mainView release];
 }
@@ -26,34 +29,47 @@
 	return (MainView *) self.view;
 }
 
-- (void)runAllocTest
+- (void)runThreadingTest
 {
-
-	while ( 1 )
+	NSObject *lock = [[[NSObject alloc] init] autorelease];
+	__block int sum = 0;
+	for ( int j = 0; j < 10; j++ )
 	{
-		self.mainView.messageLabel.text =
-			[NSString stringWithFormat:@"Alloc Test Complete: %d", ++allocTestRun];
 
-//		@autoreleasepool
-//		{
-
-			NSData *data = [[[NSData alloc]
-				initWithContentsOfFile:[[NSBundle mainBundle]
-					pathForResource:@"test" ofType:@"img"]]
-				autorelease];
-
-//		data.retain;
-
-//		[data release];
-
-			NSLog( @"[%i] ", allocTestRun );
-//		}
-
-		if ( allocTestRun == INT_MAX )
+		dispatch_async( dispatch_get_global_queue( DISPATCH_QUEUE_PRIORITY_LOW, 0 ), ^
 		{
-			break;
-		}
+			@synchronized ( lock )
+			{
+				sum += 1;
+			}
+			NSLog( @"j = [%i] %i", j, sum);
+
+			dispatch_async( dispatch_get_main_queue(), ^
+			{
+				NSLog( @"[Main]j = [%i] %i", j, sum );
+			} );
+		} );
+
 	}
+	NSLog( @"Completed..." );
+}
+
+- (void)runDispatchGroupTest
+{
+	dispatch_queue_t queue = dispatch_queue_create( "com.mycompany.queue", 0 );
+	dispatch_group_t group = dispatch_group_create();
+
+	for ( int j = 0; j < 10; j++ )
+	{
+		dispatch_group_async( group, queue, ^
+		{
+			printf( "This block is associated with our group\n" );
+		} );
+	}
+
+	printf( "Waiting..." );
+	dispatch_group_wait( group, DISPATCH_TIME_FOREVER );
+	NSLog( @"Completed..." );
 }
 
 - (void)viewDidLoad
